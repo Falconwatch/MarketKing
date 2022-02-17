@@ -1,4 +1,7 @@
-def load_data(self, ticker, period_start=None, period_end=None, step='1d'):
+import yfinance as yf
+
+
+def load_data(ticker, period_start=None, period_end=None, step='1d'):
     '''
     Returns the historical trade data.
 
