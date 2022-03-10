@@ -112,7 +112,7 @@ def form_signals(data_ma):
     for i in range(1, len(data_ma.columns)):
         short_ma_name = data_ma.columns[i]
         short_ma = data_ma[short_ma_name]
-        for j in range(i, len(data_ma.columns)):
+        for j in range(i+1, len(data_ma.columns)):
             long_ma_name = data_ma.columns[j]
             long_ma = data_ma[long_ma_name]
 
